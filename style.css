@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: radial-gradient(circle at 20% 20%, #a5d6a7 60%, transparent 70%),
+              radial-gradient(circle at 80% 80%, #66bb6a 60%, transparent 70%),
+              #e8f5e9;
+  background-attachment: fixed;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+header {
+  background: url("foto/foto-progetto.jpeg") center/cover no-repeat;
+  padding: 300px 20px 80px 20px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 0 0 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 110px;
+  background-color: rgba(46, 125, 50, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-radius: 0 0 15px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(246, 246, 246);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 8px 15px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: 0.25s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after,
+nav ul li a:active::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+nav ul li a:hover {
+  transform: scale(1.05);
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #c8ffb0;
+}
+
+nav.shrink {
+  height: 70px;
+  padding: 5px 0;
+  background-color: rgba(46, 125, 50, 0.95);
+}
+
+.logo-nav {
+  height: 100px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));
+  border-radius: 12px;
+  transition: height 0.3s ease;
+}
+
+nav.shrink .logo-nav {
+  height: 70px;
+}
+
+section {
+  background: #ffffff;
+  padding: 30px;
+  margin: 35px auto;
+  width: 85%;
+  max-width: 900px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+}
+
+section h2 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1b5e20;
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 5px 0;
+}

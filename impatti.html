@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Impatti Ambientali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <img src="foto/logo-progetto.png" class="logo-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="impatti.html">Impatti Ambientali</a></li>
+        <li><a href="raee.html">RAEE</a></li>
+        <li><a href="rischi.html">Rischi e Pericoli</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Impatti Ambientali delle Tecnologie</h1>
+</header>
+
+<section>
+    <h2>Perché la tecnologia impatta sull’ambiente?</h2>
+    <p>
+        La produzione, l’uso e lo smaltimento dei dispositivi elettronici generano un forte impatto ambientale.
+        Secondo i rapporti ONU, il settore tecnologico è uno dei più energivori e in rapida crescita.
+    </p>
+</section>
+
+<section>
+    <h2>Principali impatti</h2>
+    <ul>
+        <li><strong>Emissioni di CO₂:</strong> la produzione di smartphone e computer richiede molta energia.</li>
+        <li><strong>Consumo di risorse:</strong> litio, cobalto, rame e terre rare sono estratti con processi inquinanti.</li>
+        <li><strong>Inquinamento dell’acqua:</strong> gli scarti industriali contaminano fiumi e falde.</li>
+        <li><strong>Obsolescenza programmata:</strong> aumenta la quantità di rifiuti elettronici.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Soluzioni possibili</h2>
+    <ul>
+        <li>Economia circolare: ridurre, riusare, riciclare.</li>
+        <li>Riparazione e ricondizionamento dei dispositivi.</li>
+        <li>Data center alimentati da energie rinnovabili.</li>
+        <li>Prodotti progettati per durare di più.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Contattaci</h2>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="messaggio">Messaggio:</label><br>
+        <textarea id="messaggio" name="messaggio" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Invia">
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Progetto scolastico di educazione ambientale. Tutti i diritti riservati.</p>
+    <p>Questo sito è un progetto didattico e non rappresenta un ente ufficiale.</p>
+    <p>Le immagini e i contenuti presenti sono utilizzati a scopo educativo.</p>
+
+    <div class="footer-right">
+          <h4>Contatti</h4>
+          <address>
+            <a href="mail:taraborrelli.simone.28042009@luigidisavoia.it">taraborrelli.simone.28042009@luigidisavoia.it</a><br>
+            <a href="mail:federico.pomponio.14052009@luigidisavoia.it">federico.pomponio.14052009@luigidisavoia.it</a>
+          </address>
+     </div>
+</footer>
+
+
+<script>
+    window.addEventListener("scroll", function() {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+            navbar.classList.add("shrink");
+        } else {
+            navbar.classList.remove("shrink");
+        }
+    });
+</script>
+
+</body>
+</html>

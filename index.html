@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Impatto Ambientale delle Tecnologie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <img src="foto/logo-progetto.png"  class="logo-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="impatti.html">Impatti Ambientali</a></li>
+            <li><a href="raee.html">RAEE</a></li>
+            <li><a href="rischi.html">Rischi e Pericoli</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Impatto Ambientale delle Tecnologie</h1>
+        <p><span style="font-size: 13px;">Sito realizzato da Simone Taraborrelli e Federico Pomponio</span></p>
+    </header>
+
+    <section>
+        <h2>Benvenuto</h2>
+        <p>Questo sito esplora gli effetti ambientali delle tecnologie moderne e l'importanza del corretto smaltimento dei rifiuti elettronici.</p>
+    </section>
+
+    <section>
+        <h2>Chi siamo</h2>
+        <p>Siamo studenti appassionati di sostenibilità e tecnologia. Il nostro obiettivo è sensibilizzare sull’impatto ambientale delle tecnologie moderne e promuovere comportamenti responsabili, come il corretto smaltimento dei RAEE.</p>
+    </section>
+
+    <section>
+        <h2>Lo sapevi che…</h2>
+        <ul>
+            <li>Ogni anno nel mondo si generano oltre 50 milioni di tonnellate di RAEE.</li>
+            <li>Solo il 20% viene riciclato correttamente.</li>
+            <li>Un singolo smartphone contiene più di 30 metalli diversi.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Cosa puoi fare tu</h2>
+        <p>Ogni piccolo gesto conta. Puoi:</p>
+        <ul>
+            <li>Smaltire correttamente i dispositivi elettronici.</li>
+            <li>Preferire prodotti ricondizionati o riparabili.</li>
+            <li>Ridurre gli sprechi e informarti sull’impatto delle tecnologie.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Inquinamento elettronico</h2>
+        <p>L’inquinamento elettronico, chiamato anche <strong>e-waste</strong>, è uno dei problemi ambientali in più rapida crescita al mondo. Ogni anno vengono prodotti oltre 50 milioni di tonnellate di rifiuti elettronici, e la quantità aumenta a causa dell’obsolescenza programmata e del continuo ricambio tecnologico.</p>
+
+        <p>Quando i dispositivi non vengono smaltiti correttamente, rilasciano sostanze tossiche che contaminano suolo, aria e acqua. Questo tipo di inquinamento è particolarmente pericoloso perché invisibile e difficile da gestire.</p>
+
+        <ul>
+            <li>Contaminazione del suolo da metalli pesanti</li>
+            <li>Inquinamento delle falde acquifere</li>
+            <li>Emissioni tossiche se i dispositivi vengono bruciati</li>
+            <li>Accumulo di plastica e materiali non biodegradabili</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Perché i RAEE sono un problema</h2>
+        <p>I RAEE rappresentano un problema ambientale e sanitario perché contengono sia materiali preziosi che sostanze altamente tossiche. Se non vengono riciclati correttamente, possono causare gravi danni all’ambiente e alla salute umana.</p>
+
+        <p>Molti dispositivi contengono metalli pesanti come <strong>piombo, mercurio, cadmio</strong> e sostanze chimiche pericolose. Quando finiscono in discarica o vengono bruciati illegalmente, queste sostanze si disperdono nell’ambiente.</p>
+
+        <ul>
+            <li><strong>Rischi per la salute:</strong> problemi respiratori, danni neurologici, contaminazione alimentare.</li>
+            <li><strong>Rischi ambientali:</strong> inquinamento di aria, acqua e suolo.</li>
+            <li><strong>Spreco di risorse:</strong> oro, rame, argento e terre rare non vengono recuperati.</li>
+            <li><strong>Impatto globale:</strong> molti RAEE vengono esportati illegalmente in paesi poveri.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contattaci</h2>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="messaggio">Messaggio:</label><br>
+            <textarea id="messaggio" name="messaggio" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Invia">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Progetto scolastico di educazione ambientale. Tutti i diritti riservati.</p>
+        <p>Questo sito è un progetto didattico e non rappresenta un ente ufficiale.</p>
+        <p>Le immagini e i contenuti presenti sono utilizzati a scopo educativo.</p>
+
+        <div class="footer-right">
+          <h4>Contatti</h4>
+          <address>
+            <a href="mail:taraborrelli.simone.28042009@luigidisavoia.it">taraborrelli.simone.28042009@luigidisavoia.it</a><br>
+            <a href="mail:federico.pomponio.14052009@luigidisavoia.it">federico.pomponio.14052009@luigidisavoia.it</a>
+          </address>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("shrink");
+            } else {
+                navbar.classList.remove("shrink");
+            }
+        });
+    </script>
+
+</body>
+</html>

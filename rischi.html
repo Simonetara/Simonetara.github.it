@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Rischi e Pericoli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <img src="foto/logo-progetto.png" class="logo-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="impatti.html">Impatti Ambientali</a></li>
+        <li><a href="raee.html">RAEE</a></li>
+        <li><a class="active" href="rischi.html">Rischi e Pericoli</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Rischi e Pericoli dei Rifiuti Elettronici</h1>
+</header>
+
+<section>
+    <h2>Perché i RAEE sono pericolosi?</h2>
+    <p>
+        Lo smaltimento scorretto dei RAEE rappresenta un grave rischio per l’ambiente e la salute.
+        Secondo i rapporti ONU, nel 2023 sono state prodotte oltre 62 milioni di tonnellate di rifiuti elettronici.
+    </p>
+</section>
+
+<section>
+    <h2>Rischi per l’ambiente</h2>
+    <ul>
+        <li>Inquinamento del suolo da metalli pesanti.</li>
+        <li>Contaminazione delle falde acquifere.</li>
+        <li>Emissioni tossiche da combustione illegale.</li>
+        <li>Accumulo di plastica e materiali non biodegradabili.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Rischi per la salute</h2>
+    <ul>
+        <li>Danni neurologici causati da piombo e mercurio.</li>
+        <li>Problemi respiratori dovuti ai fumi tossici.</li>
+        <li>Disturbi ormonali causati da sostanze chimiche persistenti.</li>
+        <li>Contaminazione alimentare nelle zone vicine alle discariche.</li>
+    </ul>
+</section>
+
+<section>
+        <h2>Contattaci</h2>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="messaggio">Messaggio:</label><br>
+            <textarea id="messaggio" name="messaggio" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Invia">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Progetto scolastico di educazione ambientale. Tutti i diritti riservati.</p>
+        <p>Questo sito è un progetto didattico e non rappresenta un ente ufficiale.</p>
+        <p>Le immagini e i contenuti presenti sono utilizzati a scopo educativo.</p>
+
+        <div class="footer-right">
+          <h4>Contatti</h4>
+          <address>
+            <a href="mail:taraborrelli.simone.28042009@luigidisavoia.it">taraborrelli.simone.28042009@luigidisavoia.it</a><br>
+            <a href="mail:federico.pomponio.14052009@luigidisavoia.it">federico.pomponio.14052009@luigidisavoia.it</a>
+          </address>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("shrink");
+            } else {
+                navbar.classList.remove("shrink");
+            }
+        });
+    </script>
+
+<script>
+    window.addEventListener("scroll", function() {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+            navbar.classList.add("shrink");
+        } else {
+            navbar.classList.remove("shrink");
+        }
+    });
+</script>
+
+
+</body>
+</html>
